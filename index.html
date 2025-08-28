@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mercedes-Benz | Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <div id="topLink"></div>
+
+  <button class="topButton"><a class="topLinkText" href="#topLink">Top</a></button>
+  
+  <div class="landingImg">
+
+    <div class="landingInfo">
+      <h1>Mercedes-Benz</h1>
+      <p>The Best or Nothing.</p>
+    </div>
+
+  </div>
+
+  <h1 class="productsHeader">
+    What we offer <span class="psst">(Hover over each section)</span>
+  </h1>
+
+  <div class="accordion">
+
+    <div class="item feature-Styling">
+
+      <div class="overlay">
+        <div class="overlay-content">
+          <h1>Sophisticated Design</h1>
+          <p>Elegant Styles and LED signatures that balance presence and aerodynamics.</p>
+          <button class="learnMore">Learn More</button>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="item feature-interior">
+
+      <div class="overlay">
+        <div class="overlay-content">
+          <h1>Luxury Interior</h1>
+          <p>MBUX displays, crafted materials, and ambient lighting for modern comfort.</p>
+          <button class="learnMore">Learn More</button>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="item feature-performance">
+
+      <div class="overlay">
+        <div class="overlay-content">
+          <h1>Unmatched Performance</h1>
+          <p>AMG wheels, precision braking, and confident handling.</p>
+          <button class="learnMore">Learn More</button>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+<script>
+
+
+    document.addEventListener('DOMContentLoaded', function () {
+      const hamburger = document.querySelector('.hamburger');
+      const navItems = document.querySelector('.navItems');
+      if (hamburger && navItems) {
+        hamburger.addEventListener('click', function () {
+          navItems.classList.toggle('show');
+        });
+      }
+    });
+
+  
+    document.addEventListener('DOMContentLoaded', function () {
+      document.querySelectorAll('.accordion .item').forEach(item => {
+        item.addEventListener('click', function () {
+          this.classList.toggle('clicked');
+        });
+      });
+    });
+
+</script>
+
+  <footer class="disclaimer">
+    <small>
+        This is a student project. Mercedes-Benz and AMG are trademarks of Mercedes-Benz Group AG. No affiliation.
+    </small>
+  </footer>
+
+</body>
+
+</html>
+
+
+<!-- Images:
+
+https://www.pexels.com/photo/black-mercedes-benz-steering-wheel-498697/
+ 
+https://www.pexels.com/photo/black-and-gray-car-stereo-1033307/
+
+https://www.pexels.com/photo/close-up-of-the-front-of-the-white-mercedes-benz-eqb-17792227/
+
+https://www.pexels.com/photo/black-rubber-mercedes-benz-automotive-wheel-195635/
+
+-->
