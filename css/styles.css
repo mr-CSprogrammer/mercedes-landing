@@ -20,51 +20,6 @@ html, body {
   color: var(--ink);
 }
 
-.navBar {
-  background: #000;
-  height: 80px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-  padding: 0 12px;
-  border-bottom: 1px solid var(--line);
-}
-
-.logo {
-  padding-left: 6px;
-  font-weight: 700;
-  font-size: 18px;
-  color: var(--ink);
-  display: flex;
-  align-items: center;
-  height: 100%;
-}
-
-.navItems a {
-  margin-right: 20px;
-}
-
-.navItems a,
-.hamburger {
-  font-weight: 600;
-  color: var(--ink);
-  padding: 0 1rem;
-  transition: opacity 0.25s;
-}
-
-.navItems a:hover {
-  opacity: 0.7;
-}
-
-.hamburger {
-  display: none;
-  font-size: 1.5rem;
-  background: none;
-  border: none;
-  cursor: pointer;
-  color: var(--ink);
-}
 
 .topButton {
   position: fixed;
@@ -226,55 +181,7 @@ html, body {
 }
 
 
-.sectionHeader {
-  font-size: 2.2rem;
-  color: var(--ink);
-  text-align: center;
-  margin-top: 60px;
-  margin-bottom: 26px;
-}
-
-.aboutUsSection,
-.contactUsSection {
-  text-align: center;
-  background: var(--panel);
-  color: var(--ink);
-  width: auto;
-  max-width: 800px;
-  margin: auto;
-  padding: 40px;
-  border: 1px solid var(--line);
-  border-radius: 10px;
-  box-shadow: 0 10px 16px rgba(0, 0, 0, 0.25);
-  margin-bottom: 40px;
-}
-
-.infoSection {
-  margin-top: 60px;
-}
-
-
 @media (max-width: 768px) {
-  .navItems {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .navItems a {
-    display: block;
-    text-align: center;
-    padding: 10px;
-  }
-
-  .hamburger {
-    display: block;
-  }
-
-  .navBar {
-    height: auto;
-    padding: 1rem;
-  }
 
   .accordion {
     flex-direction: column;
@@ -298,4 +205,3 @@ html {
   color: #555;
   font-size: 12px;
 }
-
